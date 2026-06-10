@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="About Corelix Catalyst Group — Our history, mission, values and strategy"/>
+<title>Our Company | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/plant3.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / Our Company</div>
+    <h1 class="page-hero-title">Our Company</h1>
+  </div>
+</div>
+
+<!-- COMPANY OVERVIEW -->
+<section class="section section-bg-white">
+  <div class="section-label">Who We Are</div>
+  <h2 class="section-title">About Corelix Catalyst Group</h2>
+  <div class="divider"></div>
+  <div class="split-grid reveal">
+    <div>
+      <p class="section-body">We are a globally focused catalyst manufacturing and export company dedicated to delivering advanced catalytic solutions that drive industrial performance and efficiency. Founded in 1974, we operate with a commitment to technical excellence, product integrity, and seamless international distribution.</p>
+      <p class="section-body" style="margin-top:14px;">We produce and supply high-quality industrial catalysts designed to improve efficiency and performance in critical processes. Our services include catalyst manufacturing, bulk supply, and international export to clients across multiple regions.</p>
+      <p class="section-body" style="margin-top:14px;">We work closely with industries such as oil and gas, petrochemicals, and industrial processing, ensuring our products meet strict performance and quality standards. From production to delivery, we are committed to providing reliable solutions that support operational excellence worldwide.</p>
+      <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="products.html" class="btn-primary">Our Products &rarr;</a>
+        <a href="contact.html" class="btn-outline-dark">Contact Us</a>
+      </div>
+    </div>
+    <div class="split-image-wrap">
+      <img src="images/hero.jpg" alt="Corelix headquarters" style="min-height:360px;"/>
+      <div class="image-badge">Est. 1974</div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section section-bg-navy">
+  <div class="section-label">Our Purpose</div>
+  <h2 class="section-title light">Mission &amp; Vision</h2>
+  <div class="divider"></div>
+  <div class="mv-grid reveal">
+    <div class="mv-card">
+      <div class="mv-icon">🎯</div>
+      <div class="mv-label">Our Mission</div>
+      <p class="mv-text">To deliver reliable energy solutions efficiently — providing our clients with the highest-quality industrial catalysts backed by technical expertise, rigorous quality control, and seamless global logistics.</p>
+    </div>
+    <div class="mv-card">
+      <div class="mv-icon">🌍</div>
+      <div class="mv-label">Our Vision</div>
+      <p class="mv-text">To become a leading energy and catalyst provider across Asia, Europe, and America — recognised globally for innovation, reliability, and our commitment to supporting the industries that power the world.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR HISTORY -->
+<section class="section section-bg-off" id="history">
+  <div class="section-label">Our Journey</div>
+  <h2 class="section-title">Our History</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:640px;">For over five decades, Corelix has been at the forefront of industrial catalyst manufacturing, growing from a regional supplier into a trusted name in international markets.</p>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-year">1974</div>
+      <div class="timeline-title">Company Founded</div>
+      <p class="timeline-text">Corelix Catalyst Group was established with a founding vision to produce premium-quality industrial catalysts for the refining and petrochemical sectors. Operations began from our first production facility, serving clients across Europe.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">1982</div>
+      <div class="timeline-title">International Expansion Begins</div>
+      <p class="timeline-text">Following rapid growth in European markets, Corelix launched its first international export programme, establishing supply agreements with refineries across the Middle East and North Africa.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">1995</div>
+      <div class="timeline-title">R&amp;D Centre Established</div>
+      <p class="timeline-text">We opened our dedicated Research &amp; Development Centre, investing in next-generation catalyst formulations. This marked a turning point — moving from manufacturing excellence to global innovation leadership.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2003</div>
+      <div class="timeline-title">Asia-Pacific Operations Launch</div>
+      <p class="timeline-text">Corelix entered the Asia-Pacific region, securing long-term supply contracts with major petrochemical and refining companies in Singapore, South Korea, and Japan.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2010</div>
+      <div class="timeline-title">United Kingdom Headquarters Established</div>
+      <p class="timeline-text">Our global headquarters relocated to the United Kingdom, positioning Corelix at the heart of international finance and industry — enabling stronger partnerships with multinational clients and investors worldwide.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2016</div>
+      <div class="timeline-title">West Africa Market Entry</div>
+      <p class="timeline-text">Corelix established strategic supply partnerships across West Africa, supporting the growing refining and petrochemical industry in Nigeria, Ghana, and Senegal.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2020</div>
+      <div class="timeline-title">Sustainability Commitment</div>
+      <p class="timeline-text">We launched our formal Sustainability Strategy, committing to carbon reduction targets, responsible manufacturing, and development of next-generation low-emission catalyst technologies.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">Today</div>
+      <div class="timeline-title">Global Leader in Catalyst Supply</div>
+      <p class="timeline-text">Corelix today serves over 500 industrial clients in more than 40 countries across three continents, with a team of world-class engineers, chemists, and industry specialists committed to powering the industries of tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section class="section section-bg-white" id="strategy">
+  <div class="section-label">Our Direction</div>
+  <h2 class="section-title">Our Strategy</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:680px;">Our strategic priorities are built around four pillars that drive long-term value creation, operational excellence, and sustainable growth across all markets we serve.</p>
+  <div class="values-grid reveal" style="margin-top:44px;">
+    <div class="value-item"><div class="value-num">01</div><div><div class="value-title">Operational Excellence</div><p class="value-text">We continuously optimise our manufacturing processes, supply chain, and quality systems to deliver exceptional products to clients consistently and reliably.</p></div></div>
+    <div class="value-item"><div class="value-num">02</div><div><div class="value-title">Market Expansion</div><p class="value-text">We pursue strategic growth in high-potential regions including Sub-Saharan Africa, Southeast Asia, and Latin America where demand for industrial catalysts is growing rapidly.</p></div></div>
+    <div class="value-item"><div class="value-num">03</div><div><div class="value-title">Innovation &amp; R&amp;D</div><p class="value-text">Sustained investment in research and development enables us to bring next-generation catalyst formulations to market, staying ahead of industry demands and environmental standards.</p></div></div>
+    <div class="value-item"><div class="value-num">04</div><div><div class="value-title">Sustainable Growth</div><p class="value-text">We align our growth strategy with global sustainability goals, developing cleaner, more efficient catalysts that help our clients reduce emissions and improve energy performance.</p></div></div>
+  </div>
+</section>
+
+<!-- PURPOSE & VALUES -->
+<section class="section section-bg-off" id="values">
+  <div class="section-label">What Drives Us</div>
+  <h2 class="section-title">Purpose &amp; Values</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:640px;">Our purpose is to catalyse progress — to provide the world's industries with the tools they need to perform better, cleaner, and more efficiently. Everything we do is guided by six core values.</p>
+  <div class="values-grid reveal">
+    <div class="value-item"><div class="value-num">I</div><div><div class="value-title">Integrity</div><p class="value-text">We operate with complete transparency and ethical conduct in every client relationship, contract, and business decision — no exceptions.</p></div></div>
+    <div class="value-item"><div class="value-num">II</div><div><div class="value-title">Excellence</div><p class="value-text">We hold ourselves to the highest standards in manufacturing, technical service, and customer engagement — always delivering more than expected.</p></div></div>
+    <div class="value-item"><div class="value-num">III</div><div><div class="value-title">Innovation</div><p class="value-text">We invest in research, embrace new technologies, and continuously push the boundaries of what industrial catalysts can achieve.</p></div></div>
+    <div class="value-item"><div class="value-num">IV</div><div><div class="value-title">Reliability</div><p class="value-text">Our clients depend on us for consistent supply, technical accuracy, and on-time delivery. We honour that trust in every shipment and interaction.</p></div></div>
+    <div class="value-item"><div class="value-num">V</div><div><div class="value-title">Collaboration</div><p class="value-text">We build long-term relationships with clients, partners, and communities — working together to solve complex industrial challenges.</p></div></div>
+    <div class="value-item"><div class="value-num">VI</div><div><div class="value-title">Responsibility</div><p class="value-text">We take responsibility for our environmental footprint and are committed to operating safely, sustainably, and respectfully in every region we serve.</p></div></div>
+  </div>
+</section>
+
+<!-- GOVERNANCE & HEALTH/SAFETY -->
+<section class="section section-bg-white" id="governance">
+  <div class="section-label">How We Operate</div>
+  <h2 class="section-title">Governance &amp; Health &amp; Safety</h2>
+  <div class="divider"></div>
+  <div class="split-grid reveal" id="safety">
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--navy);margin-bottom:16px;">Corporate Governance</h3>
+      <p class="section-body">Corelix operates under a robust governance framework led by an independent Board of Directors. Our governance structure ensures accountability, transparency, and long-term value creation for all stakeholders.</p>
+      <p class="section-body" style="margin-top:12px;">We comply with all applicable international regulations, maintain rigorous internal controls, and publish regular reports on our financial and operational performance.</p>
+      <div style="margin-top:24px;"><a href="leadership.html" class="read-more">Meet Our Board &rarr;</a></div>
+    </div>
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--navy);margin-bottom:16px;">Health &amp; Safety</h3>
+      <p class="section-body">The safety of our people, clients, and communities is our most fundamental responsibility. We operate a zero-harm culture reinforced by rigorous safety systems, continuous training, and full regulatory compliance at every facility.</p>
+      <p class="section-body" style="margin-top:12px;">Our Health, Safety and Environment (HSE) programme is audited annually against international standards, and all employees participate in regular safety certification and emergency response training.</p>
+      <div style="margin-top:24px;"><a href="sustainability.html" class="read-more">Our Sustainability Commitment &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band navy">
+  <h2 class="section-title">Meet Our Leadership Team</h2>
+  <p>Our company is guided by an experienced global team with decades of combined expertise across oil &amp; gas, finance, legal, and international operations.</p>
+  <a href="leadership.html" class="btn-white">View Leadership &rarr;</a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

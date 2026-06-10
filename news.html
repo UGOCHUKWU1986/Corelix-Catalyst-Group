@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Latest news, releases and stories from Corelix Catalyst Group"/>
+<title>News & Stories | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/lab10.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / News &amp; Stories</div>
+    <h1 class="page-hero-title">News &amp; Stories</h1>
+  </div>
+</div>
+
+<section class="section section-bg-white" id="releases">
+  <div class="section-label">Latest Updates</div>
+  <h2 class="section-title">News Releases</h2>
+  <div class="divider"></div>
+  <div class="news-grid reveal">
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/refinery13.jpg" alt="News"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill">News Release</span><span class="news-date">May 2025</span></div>
+        <div class="news-title">Corelix Expands Catalyst Supply Agreement Across West Africa</div>
+        <p class="news-excerpt">The new multi-year agreement will see Corelix supply premium hydroprocessing catalysts to three major refineries, reinforcing our continental footprint and supporting regional energy independence.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/plant3.jpg" alt="News"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill">News Release</span><span class="news-date">March 2025</span></div>
+        <div class="news-title">Corelix Signs Strategic Partnership Agreement with Asian Refiner</div>
+        <p class="news-excerpt">A landmark five-year catalyst supply and technical services agreement with a major South East Asian refinery marks a significant expansion of our Asia-Pacific operations and client base.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/refinery14.jpg" alt="News"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill">News Release</span><span class="news-date">January 2025</span></div>
+        <div class="news-title">Corelix Achieves ISO 9001:2015 Recertification for Manufacturing</div>
+        <p class="news-excerpt">Following a comprehensive audit process, Corelix has successfully renewed its ISO 9001:2015 quality management system certification across all manufacturing operations.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-bg-off" id="stories">
+  <div class="section-label">Behind The Scenes</div>
+  <h2 class="section-title">Our Stories</h2>
+  <div class="divider"></div>
+  <div class="news-grid reveal">
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/lab2.jpg" alt="Story"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill" style="background:var(--navy);">Our Stories</span><span class="news-date">April 2025</span></div>
+        <div class="news-title">Inside Our Lab: How We Engineer Catalysts for Extreme Conditions</div>
+        <p class="news-excerpt">A behind-the-scenes look at the testing processes, material science, and engineering expertise that goes into every Corelix catalyst product — from initial formulation to final quality sign-off.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/refinery15.jpg" alt="Story"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill" style="background:var(--navy);">Our Stories</span><span class="news-date">February 2025</span></div>
+        <div class="news-title">50 Years of Corelix: A Legacy of Catalysing Industrial Progress</div>
+        <p class="news-excerpt">We celebrate five decades of catalyst innovation, international growth, and the enduring partnerships that have made Corelix a trusted name in the global energy and industrial sector.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-bg-white" id="views">
+  <div class="section-label">Our Perspective</div>
+  <h2 class="section-title">Our Views</h2>
+  <div class="divider"></div>
+  <div class="news-grid reveal">
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/refinery.jpg" alt="Views"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill" style="background:var(--gold);">Our Views</span><span class="news-date">March 2025</span></div>
+        <div class="news-title">The Future of Green Hydrogen: Catalyst Innovation at the Forefront</div>
+        <p class="news-excerpt">Our Chief Technology Officer shares Corelix&apos;s perspective on how advanced catalyst technology will accelerate the global hydrogen economy and reshape the energy landscape by 2040.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div style="overflow:hidden;height:200px;"><img class="news-img" src="images/hero.jpg" alt="Views"/></div>
+      <div class="news-body">
+        <div class="news-meta"><span class="news-tag-pill" style="background:var(--gold);">Our Views</span><span class="news-date">January 2025</span></div>
+        <div class="news-title">Why Africa&apos;s Refining Boom Will Drive Catalyst Demand for a Decade</div>
+        <p class="news-excerpt">With over 20 new refineries planned across Sub-Saharan Africa, the continent is set to become one of the world&apos;s most dynamic markets for industrial catalysts over the coming decade.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-bg-off" id="glossary">
+  <div class="section-label">Reference</div>
+  <h2 class="section-title">Glossary of Terms</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:700px;margin-bottom:36px;">A reference guide to key terminology used across the catalyst and industrial process industry.</p>
+  <div class="values-grid reveal">
+    <div class="value-item"><div><div class="value-title">Catalyst</div><p class="value-text">A substance that increases the rate of a chemical reaction without being consumed in the process. Industrial catalysts are used to accelerate refining and chemical manufacturing processes.</p></div></div>
+    <div class="value-item"><div><div class="value-title">Hydrocracking</div><p class="value-text">A refining process that uses hydrogen and a catalyst to break down heavy hydrocarbon molecules into lighter, higher-value products such as diesel and jet fuel.</p></div></div>
+    <div class="value-item"><div><div class="value-title">Hydrotreating</div><p class="value-text">A catalytic process used to remove sulphur, nitrogen, and metals from petroleum fractions, improving fuel quality and reducing environmental emissions.</p></div></div>
+    <div class="value-item"><div><div class="value-title">Adsorbent</div><p class="value-text">A material that causes molecules to adhere to its surface, used in purification processes to remove unwanted substances from gases and liquids.</p></div></div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

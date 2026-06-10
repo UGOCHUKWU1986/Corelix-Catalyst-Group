@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Corelix Catalyst Group Leadership Team and Board of Directors"/>
+<title>Leadership | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/hero.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / <a href="about.html">Our Company</a> / Leadership</div>
+    <h1 class="page-hero-title">Leadership &amp; Governance</h1>
+  </div>
+</div>
+
+<section class="section section-bg-off">
+  <div class="section-label">Our People</div>
+  <h2 class="section-title">Leadership &amp; Board of Directors</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:660px;">Corelix is led by an experienced global team with decades of combined expertise across oil &amp; gas, finance, operations, legal affairs, and international markets. Click any card to read the full biography.</p>
+
+  <div class="team-tabs" style="margin-top:44px;">
+    <button class="tab-btn active" data-tab="leadership" onclick="switchTab('leadership')">Leadership Team</button>
+    <button class="tab-btn" data-tab="board" onclick="switchTab('board')">Board of Directors</button>
+  </div>
+
+  <!-- LEADERSHIP TEAM -->
+  <div class="tab-panel active" id="tab-leadership">
+    <div class="team-grid">
+
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/george-maxwell.jpg" alt="George Maxwell"/>
+      <div class="team-info">
+        <div class="team-name">George Maxwell</div>
+        <div class="team-role">Chief Executive Officer &amp; Director</div>
+        <p class="team-bio-short">25+ years in oil and gas across production, manufacturing, and global operations.</p>
+        <p class="team-bio-full">George Maxwell brings over 25 years of experience in the oil and gas industry, spanning production, manufacturing, and global operations. As CEO of Corelix Catalyst Group, he leads strategic growth and international expansion. He has held senior leadership roles across Europe, Africa, and Asia, with strong expertise in finance and business development. His global insight and industry experience drive the company's long-term vision and performance.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/james-hill.jpg" alt="James Hill"/>
+      <div class="team-info">
+        <div class="team-name">James Hill</div>
+        <div class="team-role">Chief Operating Officer</div>
+        <p class="team-bio-short">40+ years of international oil and gas operations across onshore and offshore environments.</p>
+        <p class="team-bio-full">James Hill brings over 40 years of international experience in oil and gas operations, spanning onshore and offshore environments. At Corelix Catalyst Group, he oversees operational strategy and execution across global activities. His expertise covers the full project lifecycle, including exploration, development, and production management. His leadership ensures efficient operations, technical excellence, and consistent delivery across all projects.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/ronald-williams.jpg" alt="Ronald Williams"/>
+      <div class="team-info">
+        <div class="team-name">Ronald Williams</div>
+        <div class="team-role">Chief Financial Officer</div>
+        <p class="team-bio-short">25+ years in oil and gas finance with expertise in capital markets, reporting, and compliance.</p>
+        <p class="team-bio-full">Ronald Williams brings over 25 years of experience in finance within the oil and gas industry, with expertise in capital markets, reporting, and compliance. At Corelix Catalyst Group, he leads financial strategy, ensuring strong governance and sustainable growth. He has held senior financial leadership roles across international organisations and complex markets. His expertise supports sound financial management and long-term value creation.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/matthew-powers.jpg" alt="Matthew Powers"/>
+      <div class="team-info">
+        <div class="team-name">Matthew Powers</div>
+        <div class="team-role">EVP &amp; General Counsel</div>
+        <p class="team-bio-short">Extensive experience in legal strategy, corporate governance, and international energy operations.</p>
+        <p class="team-bio-full">Matthew Powers brings extensive experience in legal strategy, corporate governance, and international energy operations. At Corelix Catalyst Group, he oversees legal affairs, ensuring compliance and supporting strategic decision-making. He has held senior legal roles in multinational organisations and leading law firms. His expertise strengthens the company's regulatory framework and global business operations.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/lynn-willis.jpg" alt="Lynn Willis"/>
+      <div class="team-info">
+        <div class="team-name">Lynn Willis</div>
+        <div class="team-role">Chief Accounting Officer &amp; Controller</div>
+        <p class="team-bio-short">30+ years in accounting and finance within the oil and gas industry.</p>
+        <p class="team-bio-full">Lynn Willis brings over 30 years of experience in accounting and finance within the oil and gas industry. At Corelix Catalyst Group, she oversees accounting operations, financial reporting, and internal controls. She has held senior roles across international and emerging energy companies, as well as public accounting. Her expertise ensures accuracy, compliance, and strong financial discipline across the organisation.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/julie-hill.jpg" alt="Julie Hill"/>
+      <div class="team-info">
+        <div class="team-name">Julie Hill</div>
+        <div class="team-role">VP, Treasury</div>
+        <p class="team-bio-short">15+ years in finance and treasury within the energy sector.</p>
+        <p class="team-bio-full">Julie Hill brings over 15 years of experience in finance and treasury within the energy sector. At Corelix Catalyst Group, she manages treasury operations, liquidity planning, and financial risk. She has worked with publicly traded companies and multinational clients across diverse markets. Her expertise supports strong financial stability and efficient capital management.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/james-waithman.jpg" alt="James Waithman"/>
+      <div class="team-info">
+        <div class="team-name">James Waithman</div>
+        <div class="team-role">VP, Technical Services</div>
+        <p class="team-bio-short">25+ years in oil and gas with expertise across the full project lifecycle.</p>
+        <p class="team-bio-full">James Waithman brings over 25 years of experience in oil and gas, with expertise across the full project lifecycle from development to production. At Corelix Catalyst Group, he oversees technical services, ensuring operational efficiency and performance excellence. He has held senior roles in engineering, construction, and production across major international projects. His technical leadership supports the delivery of reliable and high-quality solutions globally.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/dan-maxwell.jpg" alt="Dan Maxwell"/>
+      <div class="team-info">
+        <div class="team-name">Dan Maxwell</div>
+        <div class="team-role">VP, Subsurface</div>
+        <p class="team-bio-short">40+ years in the international oil and gas industry with deep expertise in geoscience.</p>
+        <p class="team-bio-full">Dan Maxwell brings over 40 years of experience in the international oil and gas industry, with deep expertise in geoscience and subsurface analysis. At Corelix Catalyst Group, he leads subsurface strategy, supporting exploration insights and process optimisation. His background spans seismic interpretation, field development, and project evaluation across global regions. His expertise strengthens data-driven decision-making and operational efficiency.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/arlene-davitt.jpg" alt="Arlene Davitt"/>
+      <div class="team-info">
+        <div class="team-name">Arlene Davitt</div>
+        <div class="team-role">VP, Production &amp; Development</div>
+        <p class="team-bio-short">20+ years in oil and gas, spanning concept development through to operations.</p>
+        <p class="team-bio-full">Arlene Davitt brings over 20 years of experience in oil and gas, spanning concept development through to operations. At Corelix Catalyst Group, she oversees production and development activities across key projects. She has worked with leading international energy companies, with strong experience in West Africa. Her expertise ensures efficient project execution and optimised production performance.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/casey-donohue.jpg" alt="Casey Donohue, PhD"/>
+      <div class="team-info">
+        <div class="team-name">Casey Donohue, PhD</div>
+        <div class="team-role">EVP, Technical &amp; Business Development</div>
+        <p class="team-bio-short">20+ years of international experience in technical leadership, exploration, and business development.</p>
+        <p class="team-bio-full">Casey Donohue brings over 20 years of international experience in technical leadership, exploration, and business development. At Corelix Catalyst Group, he drives innovation, growth strategy, and new business opportunities. He has held senior roles across global energy companies, leading exploration and project development initiatives. His expertise supports strategic expansion and long-term value creation.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/lisa-ruiz.jpg" alt="Lisa Ruiz"/>
+      <div class="team-info">
+        <div class="team-name">Lisa Ruiz</div>
+        <div class="team-role">SVP, Global Human Resources</div>
+        <p class="team-bio-short">24+ years in human resources with a strong background in global talent management.</p>
+        <p class="team-bio-full">Lisa Ruiz brings over 24 years of experience in human resources, with a strong background in global talent management and organisational development. At Corelix Catalyst Group, she leads HR strategy, fostering a high-performance and inclusive work environment. She has held senior HR leadership roles across multinational and publicly traded organisations. Her expertise drives talent growth, operational excellence, and a strong corporate culture.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/ed-cozens.jpg" alt="Ed Cozens"/>
+      <div class="team-info">
+        <div class="team-name">Ed Cozens</div>
+        <div class="team-role">VP, Commercial &amp; Strategic Planning</div>
+        <p class="team-bio-short">15+ years in commercial strategy, corporate finance, and business development.</p>
+        <p class="team-bio-full">Ed Cozens brings over 15 years of experience in commercial strategy, corporate finance, and business development within the energy sector. At Corelix Catalyst Group, he leads commercial operations and long-term strategic planning. He has played a key role in driving growth and managing international business operations. His expertise supports value creation, market expansion, and strategic decision-making.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/toufic-nassif.jpg" alt="Toufic Nassif"/>
+      <div class="team-info">
+        <div class="team-name">Toufic Nassif</div>
+        <div class="team-role">VP, Corporate &amp; Government Affairs</div>
+        <p class="team-bio-short">Extensive experience in corporate leadership, government relations, and international energy negotiations.</p>
+        <p class="team-bio-full">Toufic Nassif brings extensive experience in corporate leadership, government relations, and international energy negotiations. At Corelix Catalyst Group, he leads corporate affairs and strategic partnerships with government and industry stakeholders. He has held executive roles across global energy companies, managing complex commercial operations and negotiations. His expertise supports strong partnerships, regulatory alignment, and global business expansion.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- BOARD OF DIRECTORS -->
+  <div class="tab-panel" id="tab-board">
+    <div class="team-grid">
+
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/andrew-john.jpg" alt="Andrew L. John"/>
+      <div class="team-info">
+        <div class="team-name">Andrew L. John</div>
+        <div class="team-role">Chairman of the Board</div>
+        <p class="team-bio-short">35+ years of global experience in the oil and gas industry across multiple international markets.</p>
+        <p class="team-bio-full">Andrew L. John brings over 35 years of global experience in the oil and gas industry, with leadership roles across multiple international markets. As Chairman of Corelix Catalyst Group, he provides strategic direction and governance oversight. He has led major operations across Africa, Asia, and other key regions, driving growth and operational excellence. His extensive experience strengthens the company's leadership and long-term vision.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/edward-laFehr.jpg" alt="Edward LaFehr"/>
+      <div class="team-info">
+        <div class="team-name">Edward LaFehr</div>
+        <div class="team-role">Director</div>
+        <p class="team-bio-short">40+ years in the global energy industry with leadership roles across North America, Europe, and the Middle East.</p>
+        <p class="team-bio-full">Edward LaFehr brings over 40 years of experience in the global energy industry, with leadership roles across North America, Europe, and the Middle East. As a Director at Corelix Catalyst Group, he contributes strategic oversight and industry expertise. He has held senior executive positions, including CEO and COO roles in major international energy companies. His experience supports strong governance, operational insight, and long-term growth strategy.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/george-maxwell.jpg" alt="George Maxwell"/>
+      <div class="team-info">
+        <div class="team-name">George Maxwell</div>
+        <div class="team-role">Chief Executive Officer &amp; Director</div>
+        <p class="team-bio-short">CEO and Board Director — 25+ years in oil and gas across Europe, Africa, and Asia.</p>
+        <p class="team-bio-full">George Maxwell serves on the Board as both CEO and Director, bringing over 25 years of experience in the oil and gas industry spanning production, manufacturing, and global operations. As CEO of Corelix Catalyst Group, he leads strategic growth and international expansion. His global insight and industry experience drive the company's long-term vision and performance.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/fabrice-nze-bekale.jpg" alt="Fabrice Nze-Bekale"/>
+      <div class="team-info">
+        <div class="team-name">Fabrice Nze-Bekale</div>
+        <div class="team-role">Director</div>
+        <p class="team-bio-short">25+ years in finance, investment banking, and strategic advisory across international markets.</p>
+        <p class="team-bio-full">Fabrice Nze-Bekale brings over 25 years of experience in finance, investment banking, and strategic advisory across international markets. As a Director at Corelix Catalyst Group, he provides valuable insight into corporate strategy and financial growth. He has held executive and board roles across banking, mining, and investment institutions in Africa and Europe. His expertise supports strong governance, investment strategy, and regional market expansion.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    <div class="team-card" onclick="toggleBio(this)">
+      <img class="team-photo" src="images/cathy-stubbs.jpg" alt="Cathy Stubbs"/>
+      <div class="team-info">
+        <div class="team-name">Cathy Stubbs</div>
+        <div class="team-role">Director</div>
+        <p class="team-bio-short">30+ years in finance, accounting, and corporate leadership within the energy industry.</p>
+        <p class="team-bio-full">Cathy Stubbs brings over 30 years of experience in finance, accounting, and corporate leadership within the energy industry. As a Director at Corelix Catalyst Group, she provides strong oversight in financial management and governance. She has held senior executive roles, including CFO and President, across international energy organisations. Her expertise supports risk management, strategic planning, and long-term organisational stability.</p>
+        <button class="team-toggle">Read Bio &rarr;</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band gold">
+  <h2 class="section-title">Join Our Team</h2>
+  <p>We are always looking for talented, driven individuals who want to make a real impact in the global energy and chemicals industry.</p>
+  <a href="careers.html" class="btn-white">View Open Positions &rarr;</a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Corelix Catalyst Group Sustainability — Climate, Water, People, Innovation"/>
+<title>Sustainability | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/lab8.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / Sustainability</div>
+    <h1 class="page-hero-title">Sustainability</h1>
+  </div>
+</div>
+
+<section class="section section-bg-white">
+  <div class="section-label">Our Commitment</div>
+  <h2 class="section-title">Built for a Sustainable Future</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:700px;">Our sustainability strategy is embedded across every operation — from the laboratory to the loading dock. We are committed to responsible manufacturing, environmental stewardship, and building an inclusive organisation that reflects the communities we serve.</p>
+  <div class="stat-row reveal" style="max-width:700px;margin-top:40px;">
+    <div class="stat-item"><div class="stat-number">2030</div><div class="stat-label">Net Zero Target</div></div>
+    <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Emission Reduction Goal</div></div>
+    <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Responsible Sourcing</div></div>
+    <div class="stat-item"><div class="stat-number">0</div><div class="stat-label">Harm Target</div></div>
+  </div>
+</section>
+
+<section class="section section-bg-navy" id="climate">
+  <div class="section-label">Environment</div>
+  <h2 class="section-title light">Climate &amp; GHG Emissions</h2>
+  <div class="divider"></div>
+  <div class="split-grid reveal">
+    <div>
+      <p class="section-body light">Corelix is actively working to reduce its carbon footprint across all manufacturing and logistics operations. We have committed to a 40% reduction in direct greenhouse gas emissions by 2030 and net-zero operations by 2035.</p>
+      <p class="section-body light" style="margin-top:14px;">Our emissions reduction programme includes energy efficiency improvements at our production facilities, transition to renewable energy sources, optimisation of logistics routes, and investment in lower-emission catalyst manufacturing technologies.</p>
+    </div>
+    <div class="split-image-wrap"><img src="images/refinery10.jpg" alt="Climate commitment" style="min-height:280px;"/></div>
+  </div>
+</section>
+
+<section class="section section-bg-off" id="biodiversity">
+  <div class="section-label">Our Pillars</div>
+  <h2 class="section-title">Our Sustainability Commitments</h2>
+  <div class="divider"></div>
+  <div class="sustain-grid reveal" style="--bg:var(--off-white);">
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);">
+      <div class="sustain-num" style="color:var(--navy);">01</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Biodiversity</div><p class="sustain-text" style="color:var(--text-body);">We assess and manage biodiversity risks at all operational sites, implementing measures to protect local ecosystems and minimise land use impact from our manufacturing activities.</p></div>
+    </div>
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);" id="water">
+      <div class="sustain-num" style="color:var(--navy);">02</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Water Stewardship</div><p class="sustain-text" style="color:var(--text-body);">We implement closed-loop water systems and strict wastewater management protocols at all production sites, aiming to reduce water consumption by 30% by 2028.</p></div>
+    </div>
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);" id="people">
+      <div class="sustain-num" style="color:var(--navy);">03</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Acceptance &amp; Belonging</div><p class="sustain-text" style="color:var(--text-body);">We are building a diverse, equitable, and inclusive organisation. Our people strategy prioritises equal opportunity, cultural respect, and creating an environment where every team member can thrive.</p></div>
+    </div>
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);" id="social">
+      <div class="sustain-num" style="color:var(--navy);">04</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Social Investment</div><p class="sustain-text" style="color:var(--text-body);">Corelix invests in the communities where we operate through education programmes, local employment initiatives, and partnerships with development organisations across Africa, Europe, and Asia.</p></div>
+    </div>
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);" id="innovation">
+      <div class="sustain-num" style="color:var(--navy);">05</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Innovation &amp; Technology</div><p class="sustain-text" style="color:var(--text-body);">We invest in next-generation catalyst R&amp;D that helps our clients achieve cleaner, more energy-efficient operations — reducing emissions at scale through better chemistry.</p></div>
+    </div>
+    <div class="sustain-item" style="background:rgba(10,22,40,0.04);border-color:rgba(200,146,42,0.2);" id="reporting">
+      <div class="sustain-num" style="color:var(--navy);">06</div>
+      <div><div class="sustain-title" style="color:var(--navy);">Reporting &amp; Transparency</div><p class="sustain-text" style="color:var(--text-body);">We publish an annual Sustainability Report aligned with GRI and TCFD frameworks, providing full transparency on our environmental performance, social impact, and governance practices.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band navy">
+  <h2 class="section-title">Download Our Sustainability Report</h2>
+  <p>Read our latest annual Sustainability Report for full details on our environmental performance, social programmes, and governance disclosures.</p>
+  <a href="contact.html" class="btn-white">Request Report &rarr;</a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

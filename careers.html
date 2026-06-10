@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Careers at Corelix Catalyst Group — Join our global team"/>
+<title>Careers | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/lab.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / Careers</div>
+    <h1 class="page-hero-title">Careers at Corelix</h1>
+  </div>
+</div>
+
+<section class="section section-bg-white">
+  <div class="section-label">Join Our Team</div>
+  <h2 class="section-title">Build Your Career with Corelix</h2>
+  <div class="divider"></div>
+  <div class="split-grid reveal">
+    <div>
+      <p class="section-body">At Corelix Catalyst Group, we believe that our people are our greatest asset. We are always looking for talented, driven individuals who want to make a real impact in the global energy and chemicals industry.</p>
+      <p class="section-body" style="margin-top:14px;">We offer competitive compensation, international career development opportunities, and a collaborative culture that rewards expertise, initiative, and results. Our team spans multiple continents and disciplines — from laboratory science to commercial strategy to supply chain logistics.</p>
+      <div class="stat-row" style="margin-top:32px;max-width:400px;">
+        <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Nationalities</div></div>
+        <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Global Offices</div></div>
+      </div>
+    </div>
+    <div class="split-image-wrap"><img src="images/hero.jpg" alt="Corelix team" style="min-height:320px;"/></div>
+  </div>
+</section>
+
+<section class="section section-bg-off">
+  <div class="section-label">Open Positions</div>
+  <h2 class="section-title">Current Vacancies</h2>
+  <div class="divider"></div>
+  <div class="reveal">
+    <div class="job-listing">
+      <div class="job-dept">Technical &amp; Engineering</div>
+      <div class="job-title">Senior Catalyst Chemist</div>
+      <div class="job-meta"><span class="job-tag">📍 London, UK</span><span class="job-tag">⏱ Full Time</span><span class="job-tag">🎓 PhD in Chemistry preferred</span></div>
+      <p class="job-desc">We are seeking an experienced Catalyst Chemist to lead formulation development and testing programmes for our refining and petrochemical catalyst product lines. The successful candidate will have deep expertise in heterogeneous catalysis and industrial process chemistry.</p>
+      <div style="margin-top:18px;"><a href="contact.html" class="btn-primary" style="padding:10px 22px;font-size:12px;">Apply Now &rarr;</a></div>
+    </div>
+    <div class="job-listing">
+      <div class="job-dept">Commercial &amp; Business Development</div>
+      <div class="job-title">Business Development Manager — Africa Region</div>
+      <div class="job-meta"><span class="job-tag">📍 Lagos / Remote</span><span class="job-tag">⏱ Full Time</span><span class="job-tag">🧳 Travel Required</span></div>
+      <p class="job-desc">We are looking for an experienced Business Development Manager to drive growth across the West and Central African market. You will be responsible for identifying new client opportunities, managing key accounts, and supporting the expansion of our regional distribution network.</p>
+      <div style="margin-top:18px;"><a href="contact.html" class="btn-primary" style="padding:10px 22px;font-size:12px;">Apply Now &rarr;</a></div>
+    </div>
+    <div class="job-listing">
+      <div class="job-dept">Supply Chain &amp; Logistics</div>
+      <div class="job-title">International Logistics Coordinator</div>
+      <div class="job-meta"><span class="job-tag">📍 London, UK</span><span class="job-tag">⏱ Full Time</span><span class="job-tag">📦 Export Experience Required</span></div>
+      <p class="job-desc">An exciting opportunity for a logistics professional with experience in international chemical goods export. You will coordinate shipments, manage customs documentation, and liaise with freight partners to ensure on-time delivery to our global client base.</p>
+      <div style="margin-top:18px;"><a href="contact.html" class="btn-primary" style="padding:10px 22px;font-size:12px;">Apply Now &rarr;</a></div>
+    </div>
+    <div class="job-listing">
+      <div class="job-dept">Finance</div>
+      <div class="job-title">Financial Analyst</div>
+      <div class="job-meta"><span class="job-tag">📍 London, UK</span><span class="job-tag">⏱ Full Time</span><span class="job-tag">📊 CFA or ACA preferred</span></div>
+      <p class="job-desc">We are seeking a detail-oriented Financial Analyst to support our CFO and finance team with financial modelling, reporting, budget management, and strategic planning analysis across our international operations.</p>
+      <div style="margin-top:18px;"><a href="contact.html" class="btn-primary" style="padding:10px 22px;font-size:12px;">Apply Now &rarr;</a></div>
+    </div>
+  </div>
+  <p class="section-body" style="margin-top:32px;font-style:italic;">Don&apos;t see a suitable role? We welcome speculative applications from exceptional candidates. <a href="contact.html" style="color:var(--gold);">Send us your CV</a>.</p>
+</section>
+
+<section class="cta-band gold">
+  <h2 class="section-title">Ready to Make Your Mark?</h2>
+  <p>Join a global team of engineers, scientists, and business professionals working at the frontier of industrial catalyst technology.</p>
+  <a href="contact.html" class="btn-white">Apply Today &rarr;</a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

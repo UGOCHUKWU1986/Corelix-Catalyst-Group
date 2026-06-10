@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Contact Corelix Catalyst Group — Enquiries, export, investors, suppliers"/>
+<title>Contact Us | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<div class="page-hero" style="margin-top:68px;">
+  <div class="page-hero-bg" style="background-image:url('images/hero.jpg')"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a> / Contact Us</div>
+    <h1 class="page-hero-title">Contact Us</h1>
+  </div>
+</div>
+
+<section class="section section-bg-navy">
+  <div class="section-label">Reach Us</div>
+  <h2 class="section-title light">Get In Touch</h2>
+  <div class="divider"></div>
+  <div class="contact-grid reveal">
+    <div>
+      <p class="section-body light" style="margin-bottom:36px;">Our team is available to assist with product enquiries, supply logistics, technical specifications, partnership opportunities, and all other business matters. We typically respond within one business day.</p>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">📍</div>
+        <div>
+          <div class="contact-label">Headquarters</div>
+          <div class="contact-value">Corelix Catalyst Group<br>Edinburgh of the Seven Seas<br>Tristan da Cunha, STHL 1ZZ<br>United Kingdom</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">💬</div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-value">+44 7988 514378</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">✉️</div>
+        <div>
+          <div class="contact-label">General Enquiries</div>
+          <div class="contact-value">info@corelixcatalysts.com</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">🛠️</div>
+        <div>
+          <div class="contact-label">Support</div>
+          <div class="contact-value">support@corelixcatalysts.com</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">🌍</div>
+        <div>
+          <div class="contact-label">Sales</div>
+          <div class="contact-value">sales@corelixcatalysts.com</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon-box">📊</div>
+        <div>
+          <div class="contact-label">Investor Relations</div>
+          <div class="contact-value">investors@corelixcatalysts.com</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="form-row" style="margin-bottom:0;">
+        <div class="form-group"><input type="text" placeholder="First Name *" required/></div>
+        <div class="form-group"><input type="text" placeholder="Last Name *" required/></div>
+      </div>
+      <div class="form-group"><input type="email" placeholder="Email Address *" required/></div>
+      <div class="form-group"><input type="text" placeholder="Company / Organisation"/></div>
+      <div class="form-group"><input type="tel" placeholder="Phone Number"/></div>
+      <div class="form-group">
+        <select required>
+          <option value="" disabled selected>Subject — Select One</option>
+          <option>Product Enquiry</option>
+          <option>Bulk Supply &amp; Export</option>
+          <option>Technical Consulting</option>
+          <option>Partnership Opportunity</option>
+          <option>Investor Relations</option>
+          <option>Careers / Recruitment</option>
+          <option>General Enquiry</option>
+        </select>
+      </div>
+      <div class="form-group"><textarea placeholder="Your message *" required></textarea></div>
+      <button class="btn-primary" style="width:100%;justify-content:center;" type="submit">Send Message &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRITY & SUPPLIERS -->
+<section class="section section-bg-off" id="integrity">
+  <div class="section-label">Our Standards</div>
+  <h2 class="section-title">Integrity Helpline</h2>
+  <div class="divider"></div>
+  <div class="split-grid reveal">
+    <div>
+      <p class="section-body">Corelix is committed to the highest standards of ethical business conduct. Our Integrity Helpline provides a confidential channel for employees, contractors, and third parties to report concerns about unethical behaviour, fraud, bribery, or violations of our Code of Conduct.</p>
+      <p class="section-body" style="margin-top:14px;">All reports are treated with the strictest confidence. Retaliation against anyone who raises a genuine concern in good faith is strictly prohibited.</p>
+      <div style="margin-top:28px;"><a href="mailto:integrity@corelixcatalysts.com" class="btn-outline-dark">integrity@corelixcatalysts.com</a></div>
+    </div>
+    <div id="suppliers">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--navy);margin-bottom:16px;">Suppliers</h3>
+      <p class="section-body">We work with a global network of suppliers and contractors who share our commitment to quality, ethics, and sustainability. If you are interested in becoming a Corelix-approved supplier, please contact our procurement team with full details of your products and services.</p>
+      <p class="section-body" style="margin-top:14px;">All suppliers are expected to comply with our Supplier Code of Conduct, which outlines our requirements on labour standards, environmental responsibility, and anti-corruption.</p>
+      <div style="margin-top:28px;"><a href="mailto:procurement@corelixcatalysts.com" class="btn-outline-dark">procurement@corelixcatalysts.com</a></div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

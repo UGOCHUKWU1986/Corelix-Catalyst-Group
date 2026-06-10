@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Corelix Catalyst Group — Global Catalyst Solutions for Industrial Excellence"/>
+<title>Home | Corelix Catalyst Group</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search..." aria-label="Search"/>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Corelix Catalyst Group" class="nav-logo-img"/>
+    </a>
+    <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <div class="menu-section" data-section="company">
+    <div class="menu-section-title" onclick="toggleSection('company')">
+      Our Company <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="about.html">Our Company</a>
+      <a class="menu-item" href="about.html#history" data-page="about.html">Our History</a>
+      <a class="menu-item" href="about.html#strategy">Our Strategy</a>
+      <a class="menu-item" href="about.html#values">Purpose &amp; Values</a>
+      <a class="menu-item" href="leadership.html#team">Leadership Team</a>
+      <a class="menu-item" href="leadership.html#board">Board of Directors</a>
+      <a class="menu-item" href="about.html#governance">Governance</a>
+      <a class="menu-item" href="about.html#safety">Health &amp; Safety</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="operations">
+    <div class="menu-section-title" onclick="toggleSection('operations')">
+      Our Operations <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="products.html">Our Operations</a>
+      <a class="menu-item" href="products.html#refining">Oil &amp; Gas Refining</a>
+      <a class="menu-item" href="products.html#petrochemical">Petrochemical Catalysts</a>
+      <a class="menu-item" href="products.html#industrial">Industrial Processing</a>
+      <a class="menu-item" href="products.html#adsorbents">Adsorbents</a>
+      <a class="menu-item" href="products.html#value-chain">Value Chain</a>
+      <a class="menu-item" href="products.html">Products &amp; Services</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="investors">
+    <div class="menu-section-title" onclick="toggleSection('investors')">
+      Investors <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="investors.html">Investors</a>
+      <a class="menu-item" href="investors.html#results">Financial Results &amp; Reports</a>
+      <a class="menu-item" href="investors.html#presentations">Presentations &amp; Events</a>
+      <a class="menu-item" href="investors.html#shareholders">Shareholder Information &amp; FAQs</a>
+      <a class="menu-item" href="investors.html#guidance">Corporate Guidance</a>
+      <a class="menu-item" href="investors.html#market">Market Indicators</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="sustain">
+    <div class="menu-section-title" onclick="toggleSection('sustain')">
+      Sustainability <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="sustainability.html">Sustainability</a>
+      <a class="menu-item" href="sustainability.html#biodiversity">Biodiversity</a>
+      <a class="menu-item" href="sustainability.html#climate">Climate &amp; GHG Emissions</a>
+      <a class="menu-item" href="sustainability.html#water">Water Stewardship</a>
+      <a class="menu-item" href="sustainability.html#people">Acceptance &amp; Belonging</a>
+      <a class="menu-item" href="sustainability.html#social">Social Investment</a>
+      <a class="menu-item" href="sustainability.html#innovation">Innovation &amp; Technology</a>
+      <a class="menu-item" href="sustainability.html#reporting">Reporting</a>
+    </div>
+  </div>
+
+  <div class="menu-section" data-section="news">
+    <div class="menu-section-title" onclick="toggleSection('news')">
+      News &amp; Stories <span class="menu-chevron">▼</span>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item heading" href="news.html">News &amp; Stories</a>
+      <a class="menu-item" href="news.html#releases">News Releases</a>
+      <a class="menu-item" href="news.html#stories">Our Stories</a>
+      <a class="menu-item" href="news.html#views">Our Views</a>
+      <a class="menu-item" href="news.html#glossary">Glossary</a>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a class="menu-footer-link" href="contact.html#integrity">Integrity Helpline</a>
+    <a class="menu-footer-link" href="careers.html">Careers</a>
+    <a class="menu-footer-link" href="contact.html#suppliers">Suppliers</a>
+    <span class="menu-footer-link" onclick="showConsent()">🍪 Manage Consent Preferences</span>
+  </div>
+</div>
+
+
+<section class="hero" style="margin-top:0; padding:0;">
+  <div id="heroSlides" style="position:absolute;inset:0;">
+    <div class="hero-slide active" style="background-image:url('images/refinery.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/plant.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/refinery2.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/lab.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/plant2.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/refinery3.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/steel.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/lab2.jpg')"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Industrial Catalyst Solutions &mdash; Global Reach Since 1974</div>
+    <h1 class="hero-headline">Global Catalyst Solutions<br>for <em>Industrial Excellence</em></h1>
+    <p class="hero-sub">We produce and export high‑performance catalyst products to clients worldwide, supporting industries with reliable supply, technical expertise, and efficient logistics.</p>
+    <div class="hero-actions">
+      <a href="products.html" class="btn-primary">Our Products &rarr;</a>
+      <a href="about.html" class="btn-outline">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-indicators">
+    <div class="hero-dot active" onclick="goToSlide(0)"></div>
+    <div class="hero-dot" onclick="goToSlide(1)"></div>
+    <div class="hero-dot" onclick="goToSlide(2)"></div>
+    <div class="hero-dot" onclick="goToSlide(3)"></div>
+    <div class="hero-dot" onclick="goToSlide(4)"></div>
+    <div class="hero-dot" onclick="goToSlide(5)"></div>
+    <div class="hero-dot" onclick="goToSlide(6)"></div>
+    <div class="hero-dot" onclick="goToSlide(7)"></div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div>Scroll</div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="section section-bg-off" style="padding-top:100px;">
+  <div class="split-grid reveal">
+    <div class="split-image-wrap">
+      <img src="images/refinery4.jpg" alt="Corelix plant facility" style="min-height:380px;"/>
+      <div class="image-badge">Est. 1974</div>
+    </div>
+    <div>
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">Precision Catalysts.<br>Global Excellence.</h2>
+      <div class="divider"></div>
+      <p class="section-body">We are a globally focused catalyst manufacturing and export company dedicated to delivering advanced catalytic solutions that drive industrial performance and efficiency. Founded in 1974, we operate with a commitment to technical excellence, product integrity, and seamless international distribution.</p>
+      <p class="section-body" style="margin-top:14px;">Our catalysts are designed to support critical processes across refining, petrochemical, and industrial sectors, helping clients achieve higher yields, improved efficiency, and sustainable outcomes.</p>
+      <div class="stat-row">
+        <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Years Experience</div></div>
+        <div class="stat-item"><div class="stat-number">40+</div><div class="stat-label">Countries Served</div></div>
+        <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Global Clients</div></div>
+        <div class="stat-item"><div class="stat-number">99.6%</div><div class="stat-label">Quality Compliance</div></div>
+      </div>
+      <div style="margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="about.html" class="btn-primary">Read More &rarr;</a>
+        <a href="contact.html" class="btn-outline-dark">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS OVERVIEW -->
+<section class="section section-bg-white">
+  <div class="section-label">Our Solutions</div>
+  <h2 class="section-title">Products &amp; Services</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:600px;">From refining catalysts to custom formulations, every Corelix product is engineered to meet international quality standards and optimised for high performance.</p>
+  <div class="cards-grid reveal" style="margin-top:44px;">
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="21" stroke="#c8922a" stroke-width="1.5"/><path d="M15 24h18M24 15v18" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="7" stroke="#c8922a" stroke-width="1.5"/></svg>
+      <div class="card-title">Refining Catalysts</div>
+      <p class="card-body">High-performance catalysts for fuel processing, hydrocracking, hydrotreating, and reforming — maximising output and efficiency for refineries worldwide.</p>
+      <a href="products.html#refining" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><rect x="9" y="15" width="30" height="22" rx="2" stroke="#c8922a" stroke-width="1.5"/><path d="M9 22h30M18 15v5M30 15v5" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="29" r="4" stroke="#c8922a" stroke-width="1.5"/></svg>
+      <div class="card-title">Petrochemical Catalysts</div>
+      <p class="card-body">High-selectivity catalysts supporting chemical conversion and production of ethylene, propylene, aromatics, and other critical petrochemical intermediates.</p>
+      <a href="products.html#petrochemical" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><path d="M24 9l15 8.5v17L24 43 9 34.5v-17z" stroke="#c8922a" stroke-width="1.5"/><circle cx="24" cy="26" r="6" stroke="#c8922a" stroke-width="1.5"/></svg>
+      <div class="card-title">Custom Catalysts</div>
+      <p class="card-body">Bespoke catalyst formulations tailored precisely to your specific industrial requirements, process conditions, and performance targets.</p>
+      <a href="products.html#custom" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><circle cx="17" cy="17" r="8" stroke="#c8922a" stroke-width="1.5"/><circle cx="33" cy="31" r="8" stroke="#c8922a" stroke-width="1.5"/><path d="M23 23l2 2" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="card-title">Adsorbents</div>
+      <p class="card-body">Advanced adsorbent materials for gas purification, liquid treatment, and separation processes across a wide range of industrial applications.</p>
+      <a href="products.html#adsorbents" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><path d="M13 35L24 13l11 22" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 28h16" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="card-title">Chemical Compounds</div>
+      <p class="card-body">Specialised chemical compounds and additives designed to enhance process performance, product quality, and operational efficiency.</p>
+      <a href="products.html#chemicals" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="21" r="11" stroke="#c8922a" stroke-width="1.5"/><path d="M24 32v8M17 40h14" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/><path d="M20 21h8M24 17v8" stroke="#c8922a" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="card-title">Bulk Supply &amp; Export</div>
+      <p class="card-body">Reliable international bulk supply and export to clients across Africa, Europe, Asia, and beyond — with rigorous logistics management.</p>
+      <a href="products.html" class="read-more">Learn More &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section section-bg-off">
+  <div class="section-label">Our Advantage</div>
+  <h2 class="section-title">Why Choose Corelix</h2>
+  <div class="divider"></div>
+  <div class="why-grid reveal">
+    <div class="why-item"><div class="why-title">Consistent Quality</div><p class="why-text">Every product is manufactured with strict quality control and tested to international performance standards before leaving our facility.</p></div>
+    <div class="why-item"><div class="why-title">Global Export Capability</div><p class="why-text">Reliable delivery infrastructure across international markets — from single orders to large-scale recurring supply contracts.</p></div>
+    <div class="why-item"><div class="why-title">Industry Focused</div><p class="why-text">Deep expertise in oil, gas, petrochemicals, and industrial processing — our solutions are built around the real demands of your operations.</p></div>
+    <div class="why-item"><div class="why-title">Customer Commitment</div><p class="why-text">We prioritise long-term partnerships and client satisfaction, working closely from initial consultation through to ongoing technical support.</p></div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section section-bg-white">
+  <div class="section-label">Sectors We Serve</div>
+  <h2 class="section-title">Industries We Power</h2>
+  <div class="divider"></div>
+  <div class="industry-grid reveal">
+    <div class="industry-card"><img src="images/refinery5.jpg" alt="Oil and Gas"/><div class="industry-overlay"><div class="industry-name">Oil &amp; Gas Refining</div><p class="industry-desc">Hydrocracking, hydrotreating, and reforming catalysts for global refineries.</p><a href="products.html#refining" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/plant3.jpg" alt="Petrochemicals"/><div class="industry-overlay"><div class="industry-name">Petrochemical Processing</div><p class="industry-desc">High-selectivity catalysts for ethylene, propylene, and aromatics production.</p><a href="products.html#petrochemical" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/lab3.jpg" alt="Chemical Manufacturing"/><div class="industry-overlay"><div class="industry-name">Chemical Manufacturing</div><p class="industry-desc">Catalysts for ammonia synthesis, methanol production, and chemical intermediates.</p><a href="products.html#industrial" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/refinery6.jpg" alt="Industrial"/><div class="industry-overlay"><div class="industry-name">Industrial Processing</div><p class="industry-desc">Custom catalyst solutions for a wide range of industrial processing applications.</p><a href="products.html#industrial" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/lab4.jpg" alt="Energy"/><div class="industry-overlay"><div class="industry-name">Energy &amp; Environmental</div><p class="industry-desc">Solutions supporting cleaner energy production and environmental compliance globally.</p><a href="sustainability.html" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/steel.jpg" alt="Steel"/><div class="industry-overlay"><div class="industry-name">Steel &amp; Metals</div><p class="industry-desc">Advanced adsorbents and process catalysts for steel production and metallurgy.</p><a href="products.html#adsorbents" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/refinery7.jpg" alt="Upstream"/><div class="industry-overlay"><div class="industry-name">Upstream Operations</div><p class="industry-desc">Reliable catalyst supply for upstream oil and gas extraction and processing.</p><a href="products.html" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+    <div class="industry-card"><img src="images/lab5.jpg" alt="Research"/><div class="industry-overlay"><div class="industry-name">Research &amp; Innovation</div><p class="industry-desc">Bespoke catalyst R&amp;D for emerging industrial applications and new technologies.</p><a href="products.html#custom" class="read-more" style="color:var(--gold-light);">Learn More &rarr;</a></div></div>
+  </div>
+</section>
+
+<!-- INDUSTRIAL STRIP -->
+<section class="section section-bg-navy" style="padding:0;">
+  <div class="industrial-strip">
+    <div class="industrial-strip-item">
+      <img src="images/refinery8.jpg" alt="Refinery operations"/>
+      <div class="industrial-strip-overlay">
+        <div class="industrial-strip-title">Refinery Operations</div>
+        <div class="industrial-strip-sub">World-class catalyst performance</div>
+      </div>
+    </div>
+    <div class="industrial-strip-item">
+      <img src="images/lab6.jpg" alt="Laboratory precision"/>
+      <div class="industrial-strip-overlay">
+        <div class="industrial-strip-title">Laboratory Precision</div>
+        <div class="industrial-strip-sub">Tested to global standards</div>
+      </div>
+    </div>
+    <div class="industrial-strip-item">
+      <img src="images/plant2.jpg" alt="Plant operations"/>
+      <div class="industrial-strip-overlay">
+        <div class="industrial-strip-title">Plant Excellence</div>
+        <div class="industrial-strip-sub">Reliable industrial supply</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP / GLOBAL REACH -->
+<section class="section section-bg-white">
+  <div class="section-label">Our Footprint</div>
+  <h2 class="section-title">Our Global Reach</h2>
+  <div class="divider"></div>
+  <p class="section-body" style="max-width:600px;">We proudly supply catalysts to clients across Africa, Europe, Asia, and beyond — supporting industries with dependable products and timely delivery to every corner of the world.</p>
+  <div class="map-gallery reveal" style="margin-top:36px;">
+    <img src="images/map.jpg" alt="Global operations map"/>
+    <img src="images/map2.jpg" alt="Africa operations"/>
+    <img src="images/map3.jpg" alt="Europe operations"/>
+    <img src="images/map4.jpg" alt="Asia operations"/>
+  </div>
+  <div class="reach-grid reveal" style="margin-top:44px;">
+    <div class="reach-stat"><div class="reach-num">40+</div><div class="reach-lbl">Countries Served</div></div>
+    <div class="reach-stat"><div class="reach-num">3</div><div class="reach-lbl">Continents</div></div>
+    <div class="reach-stat"><div class="reach-num">50+</div><div class="reach-lbl">Years Experience</div></div>
+    <div class="reach-stat"><div class="reach-num">500+</div><div class="reach-lbl">Global Clients</div></div>
+  </div>
+  <div style="margin-top:50px;text-align:center;">
+    <a href="about.html" class="btn-primary">Learn More &rarr;</a>
+  </div>
+</section>
+
+<!-- LET'S WORK TOGETHER -->
+<section class="cta-band gold">
+  <div class="section-label" style="color:rgba(255,255,255,0.7);">Get In Touch</div>
+  <h2 class="section-title">Let&rsquo;s Work Together</h2>
+  <p>Looking for reliable catalyst supply for your operations? Get in touch with us today to discuss your needs and find the right solution for your industry.</p>
+  <a href="contact.html" class="btn-white">Contact Us &rarr;</a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Corelix Catalyst Group" class="footer-logo-img"/>
+      </a>
+      <p class="footer-brand-text">Producing and supplying world‑class industrial catalysts to clients across Africa, Europe, Asia, and beyond. Founded 1974.</p>
+    </div>
+    <div class="footer-group">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#history">Our History</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#safety">Health &amp; Safety</a>
+    </div>
+    <div class="footer-group">
+      <h4>Products</h4>
+      <a href="products.html">Our Products</a>
+      <a href="products.html#refining">Refining Catalysts</a>
+      <a href="products.html#petrochemical">Petrochemical</a>
+      <a href="products.html#adsorbents">Adsorbents</a>
+      <a href="products.html#custom">Custom Solutions</a>
+    </div>
+    <div class="footer-group">
+      <h4>Connect</h4>
+      <a href="news.html">News &amp; Stories</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="contact.html#integrity">Integrity Helpline</a>
+      <a href="contact.html#suppliers">Suppliers</a>
+      <a href="#" onclick="showConsent();return false;">🍪 Manage Preferences</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Corelix Catalyst Group. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-manage" onclick="showConsent()">Manage Preferences</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
